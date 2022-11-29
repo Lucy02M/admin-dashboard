@@ -1,26 +1,53 @@
-div{
-    border: 2px solid ;
-    
-}
-
 body{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 3fr;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .sidebar{
-    
+    display: grid;
+    gap: 25px;
+    grid-template-rows: 1fr 2fr 3fr;
     grid-column: 1 / 2;
     grid-row: 1 / 3 ;
+    background-color: aqua;
+    border: 2px solid ;
+    width:clamp(280px, 30vw, 300px);
+}
+
+.link, .logo{
+    margin: 10px 0 10px 20px;
+}
+
+h1, h3{
+    display: inline;
+}
+
+object{
+    margin:10px 10px -13px 20px;
+}
+
+.main-logo{
+    margin:10px 5px -25px -5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .header{ 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    border: 2px solid ;
 }
 
 .main-content{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    border: 2px solid ;
 }
