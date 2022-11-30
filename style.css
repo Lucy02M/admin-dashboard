@@ -17,6 +17,15 @@
     background-size: cover;
 }
 
+.imagediv:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.5);
+}
+
+.imagediv:active{
+    box-shadow:inset 0px 0px 13px -2px rgba(0,0,0,0.5);
+}
+
 .user .imagediv{
     height: 50px;
     width: 50px;
@@ -206,6 +215,17 @@ hr{
     align-items: center;
 }
 
+.noti:hover{
+    cursor: pointer;
+    height: 27px;
+    margin-right: -2px;
+}
+.noti:active{
+    height: 20px;
+    filter: brightness(80%);
+    margin-right: 5px;
+}
+
 .user-info{
     display: flex;
     align-items: center;
@@ -226,6 +246,22 @@ hr{
 }
 
 button{
-    height: 40px;
-    width: 90px;
+    height: 46px;
+    width: 95px;
+    background-color: #3D405B;
+    color: #F2CC8F;
+    border-radius: 10px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 20px;
+    border: 5px outset #3D405B;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button:hover{
+    background-color: #454866;
+}
+
+button:active{
+    border: 5px inset #3D405B;
 }
