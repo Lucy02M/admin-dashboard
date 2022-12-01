@@ -11,7 +11,7 @@
 .imagediv{
     width:auto;
     text-align:center;
-    background-image: url("./cat.png?v=0");
+    background-image: url("./images/cat.png");
     border-radius: 50px;
     background-position: center;
     background-size: cover;
