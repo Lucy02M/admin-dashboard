@@ -135,6 +135,15 @@ body{
     gap: 10px;
 }
 
+.icons img:hover{
+    cursor: pointer;
+}
+
+.icons img:active{
+    cursor: pointer;
+    filter:opacity(50%);
+}
+
 .announ{
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -195,6 +204,11 @@ hr{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.inf:hover{
+    cursor: pointer;
+    color: #E07A5F;
 }
 
 .inf img{
