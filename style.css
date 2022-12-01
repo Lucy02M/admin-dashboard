@@ -120,6 +120,10 @@ body{
     height: 20vh;
 }
 
+.card h3{
+    color: #6b9781;
+}
+
 .card p{
     margin-top: -5px;
 }
@@ -150,6 +154,19 @@ body{
     border-radius: 10px;
     background-color: var(--white);
     color: var(--blue);
+}
+
+.acard h4, .infname h3{
+    color:#E07A5F;
+}
+
+.backad:hover{
+    background-color: #3d405b21;
+    cursor: pointer;
+}
+
+.backad:active{
+    color: #6b9781;
 }
 
 hr{
