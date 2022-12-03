@@ -4,6 +4,7 @@
     --white: #F4F1DE;
     --pink: #E07A5F;
     --blue: #3D405B;
+    --color:61, 64, 91;
     --green: #81B29A;
     --cream: #F2CC8F;
 }
@@ -183,7 +184,7 @@ body{
 }
 
 .backad:hover{
-    background-color: var(--blue);
+    background-color: rgba(var(--color), 0.3);
     cursor: pointer;
 }
 
@@ -333,6 +334,7 @@ button:active{
     --white: #3D405B;
     --pink: #1c162b;
     --blue: #c7c4b2;
+    --color:199, 196, 178;
     --green: #1a3238;
     --cream: #040724;
 }
