@@ -8,6 +8,19 @@
     --cream: #F2CC8F;
 }
 
+.theme img:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    filter: opacity(70%);
+}
+
+.theme img:active{
+    border-radius: 50px;
+    background-color:rgba(128, 122, 100, 0.5) ;
+    background-color:rgba(85, 129, 170, 0.5) ;
+    filter: opacity(50%);
+}
+
 .imagediv{
     width:auto;
     text-align:center;
@@ -111,7 +124,7 @@ body{
 }
 
 .card{
-    background: linear-gradient(90deg, #6b9781 0%, #E07A5F 3%, #F4F1DE 3%, #F4F1DE 100%);
+    background: linear-gradient(90deg, var(--green) 0%, var(--pink) 3%, var(--white) 3%, var(--white) 100%);
     color: var(--blue);
     display: flex;
     flex-direction: column;
@@ -121,7 +134,7 @@ body{
 }
 
 .card h3{
-    color: #6b9781;
+    color: var(--green);
 }
 
 .card p{
@@ -130,7 +143,7 @@ body{
 
 .icons{
     align-self: flex-end;
-    margin-top: 3vh;
+    margin-top:0.5rem;
     display: flex;
     gap: 10px;
 }
@@ -166,16 +179,16 @@ body{
 }
 
 .acard h4, .infname h3{
-    color:#E07A5F;
+    color:var(--pink);
 }
 
 .backad:hover{
-    background-color: #3d405b21;
+    background-color: var(--blue);
     cursor: pointer;
 }
 
 .backad:active{
-    color: #6b9781;
+    color:var(--green);
 }
 
 hr{
@@ -208,7 +221,7 @@ hr{
 
 .inf:hover{
     cursor: pointer;
-    color: #E07A5F;
+    color: var(--pink);
 }
 
 .inf img{
@@ -248,12 +261,12 @@ hr{
 
 .bar:hover{
     cursor: pointer;
-    color:#F2CC8F;
+    color:var(--cream);
 }
 
 .bar:active{
-    color:#3D405B;
-    background-color: #6b9781;
+    color:var(--blue);
+    background-color: var(--green);
 }
 
 .user{
@@ -297,12 +310,12 @@ hr{
 button{
     height: 46px;
     width: 95px;
-    background-color: #3D405B;
-    color: #F2CC8F;
+    background-color: var(--blue);
+    color: var(--cream);
     border-radius: 10px;
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 20px;
-    border: 5px outset #3D405B;
+    border: 5px outset var(--blue);
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -314,4 +327,12 @@ button:hover{
 
 button:active{
     border: 5px inset #3D405B;
+}
+
+.dark-mode{
+    --white: #3D405B;
+    --pink: #1c162b;
+    --blue: #c7c4b2;
+    --green: #1a3238;
+    --cream: #040724;
 }
